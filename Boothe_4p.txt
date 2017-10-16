@@ -1,0 +1,531 @@
+The test case runs will begin with system testing before fledging out and testing 
+the the individual functions. To that end, we started with a 
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Samantha
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 2
+
+
+We will be depositing to an existing account.  To cancel, input "$$" at any input.
+Please input name. Name:  Samantha
+
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+Input deposit amount.20000
+
+The crash here is a Debug assertion fail. After some thought, I realized I had not
+used the vector push_back on the account and child classes. This is fixed.
+
+
+
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Sam
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 7
+
+
+Calculating available bank funds:
+
+Hm, this resulted in a stack overflow error. The problem turns out to be an infinite
+recursion due to getBalance calling itself. Fixed.
+
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Sam
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 2
+
+
+We will be depositing to an existing account.  To cancel, input "$$" at any input.
+Please input name. Name:  Sam
+
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+Input deposit amount:  2200.00
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Kit
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+3
+Account type:  CD Account
+Please input interest rate (in precentage):
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input:
+
+The interest rate didn't accept parameters because the program used the  previous value (3)
+for the interest rate. This error has been fixed.
+
+
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Sam
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+2
+Account type:  Saving Account
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 2
+
+
+We will be depositing to an existing account.  To cancel, input "$$" at any input.
+Please input name. Name:  Sam
+
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+2
+Account type:  Saving Account
+Input deposit amount:  2500.00
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Kit
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 2
+
+
+We will be depositing to an existing account.  To cancel, input "$$" at any input.
+Please input name. Name:  Kit
+
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+Input deposit amount:  5000.00
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 4
+
+
+We will be withdrawing to an existing account.
+Please input name. Name:  Kit
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+Funds acquired. Please select target account of transfer
+Please input name of account holder. Name:  Sam
+Excellent. What kind of account type for this individual?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+2
+Account type:  Saving Account
+Input transfer amount:
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input:
+
+This run revealed a similar error regarding transfer amount. 
+
+With most run, I did a quick standard use run to test out the print
+ account transactions and my fixes.
+
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Sam
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 1
+
+
+We will be creating a new account. To cancel, input "$$" at any input.
+Please input name. Name:  Kit
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+2
+Account type:  Saving Account
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 2
+
+
+We will be depositing to an existing account.  To cancel, input "$$" at any input.
+Please input name. Name:  $$
+Ending transaction. This transaction will not be recorded.
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 2
+
+
+We will be depositing to an existing account.  To cancel, input "$$" at any input.
+Please input name. Name:  Kit
+
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+2
+Account type:  Saving Account
+Input deposit amount:  4000
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 2
+
+
+We will be depositing to an existing account.  To cancel, input "$$" at any input.
+Please input name. Name:  Sam
+
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+Input deposit amount:  1000
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 3
+
+
+We will be withdrawing to an existing account.
+Please input name. Name:  Sam
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+Input withdraw amount:  200
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 4
+
+
+We will be withdrawing to an existing account.
+Please input name. Name:  Kit
+Excellent. What kind of account type?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+2
+Account type:  Saving Account
+Funds acquired. Please select target account of transfer
+Please input name of account holder. Name:  Sam
+Excellent. What kind of account type for this individual?
+(1)Checking Account, (2)Saving Account, (3)CD Account, (4) Money Market Account
+
+1
+Account type:  Checking Account
+Input transfer amount:  1400
+
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 7
+
+
+Calculating available bank funds:
+
+Transaction 2:
+ Deposit
+ Name:  Sam
+ Account Type:  Checking Account
+ Deposit amount:  1000.000000
+
+
+Transaction 3:
+ Withdraw
+ Name:  Sam
+ Account Type:  Checking Account
+ Withdrawal amount:  200.000000
+ Fee: N/A
+
+
+Transaction 4:
+ Incoming Transfer
+ Name:  Sam
+ Account Type:  Checking Account
+ Transfer amount:  1400.000000
+
+
+Sam's Account Total:  2200Transaction 2:
+ Deposit
+ Name:  Kit
+ Account Type:  Saving Account
+ Deposit amount:  4000.000000
+
+
+Transaction 3:
+ Outgoing Transfer
+ Name:  Kit
+ Account Type:  Saving Account
+ Transfer amount:  1400.000000
+
+
+Kit's Account Total:  2600The current available funds for Aubie Bank:  4800.00
+            ===================================================
+
+            |                 Welcome to AubieBank!                  |          
+            ===================================================
+
+
+Select an option by inputing the associated number:
+(1) Create Account, (2) Deposit, (3) Withdraw, (4), Transfer
+(5) Balance Inquiry, (6) Print account transcations,
+(7) Print bank balance, (8) Terminate
+User Input: 8
+
+
+Terminating program.
+
+Looks good!~
